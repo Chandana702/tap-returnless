@@ -7,9 +7,8 @@ from singer_sdk.testing import get_tap_test_class
 from tap_returnless.tap import TapReturnless
 
 SAMPLE_CONFIG = {
-    # "start_date": datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%d"),
-    "start_date": "2025-01-01",
-    "auth_token": "d1s462Ug8eBE81QiBzO2V1GJEUutE2Qf6AhHJkHP85ce2967",
+    "start_date": datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%d"),
+    "auth_token": "",
     # TODO: Initialize minimal tap config
 }
 
