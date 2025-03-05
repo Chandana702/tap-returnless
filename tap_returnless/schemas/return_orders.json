@@ -1,0 +1,74 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": ["string", "null"]
+        },
+        "order_date": {
+            "type": ["string", "null"]
+        },
+        "quantity": {
+            "type": ["integer", "null"]
+        },
+        "return_number": {
+            "type": ["string", "null"]
+        },
+        "state": {
+            "type": ["string", "null"]
+        },
+        "status": {
+            "type": ["object", "null"]
+        },
+        "free_shipping": {
+            "type": ["boolean", "null"]
+        },
+        "status_details": {
+            "type": ["object", "null"]
+        },
+        "value": {
+            "type": ["object", "null"]
+        },
+        "total_amounts": {
+            "type": ["object", "null"]
+        },
+        "is_test_record": {
+            "type": ["boolean", "null"]
+        },
+        "created_at": {
+            "type": ["string", "null"]
+        },
+        "updated_at": {
+            "type": ["string", "null"]
+        },
+        "includes": {
+            "properties": {
+                "customer": {
+                    "type": ["object", "null"]
+                },
+                "customer_address": {
+                    "type": ["object", "null"]
+                },
+                "form": {
+                    "type": ["object", "null"]
+                },
+                "notes": {
+                    "type": ["array", "null"]
+                },
+                "answers": {
+                    "type": ["array", "null"]
+                },
+                "return_order_items": {
+                    "type": ["array", "null"]
+                },
+                "sales_order": {
+                    "type": ["object", "null"]
+                },
+                "shipmemnts": {
+                    "type": ["array", "null"]
+                }
+            },
+            "type": ["object", "null"]
+        }
+    }
+}

@@ -1,0 +1,42 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": ["string", "null"]
+        },
+        "status": {
+            "type": ["string", "null"]
+        },
+        "payment_method": {
+            "type": ["string", "null"]
+        },
+        "shipping_method": {
+            "type": ["string", "null"]
+        },
+        "order_number": {
+            "type": ["string", "null"]
+        },
+        "external_id": {
+            "type": ["string", "null"]
+        },
+        "order_date": {
+            "type": ["string", "null"]
+        },
+        "sales_order_items": {
+            "type": ["array", "null"]
+        },
+        "additional_attributes": {
+            "type": ["array", "null"]
+        },
+        "meta_data": {
+            "type": ["array", "null"]
+        },
+        "total_amounts": {
+            "type": ["object", "null"]
+        },
+        "channels": {
+            "type": ["array", "null"]
+        }
+    }
+}

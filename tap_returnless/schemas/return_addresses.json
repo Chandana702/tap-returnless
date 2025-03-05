@@ -1,0 +1,45 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": ["string", "null"]
+        },
+        "name": {
+            "type": ["string", "null"]
+        },
+        "company_name": {
+            "type": ["string", "null"]
+        },
+        "telephone": {
+            "type": ["string", "null"]
+        },
+        "street": {
+            "type": ["string", "null"]
+        },
+        "house_number": {
+            "type": ["string", "null"]
+        },
+        "suffix": {
+            "type": ["string", "null"]
+        },
+        "postal_code": {
+            "type": ["string", "null"]
+        },
+        "city": {
+            "type": ["string", "null"]
+        },
+        "coordinates": {
+            "type": ["object", "null"]
+        },
+        "country": {
+            "type": ["object", "null"]
+        },
+        "is_primary": {
+            "type": ["boolean", "null"]
+        },
+        "created_at": {
+            "type": ["string", "null"]
+        }
+    }
+}

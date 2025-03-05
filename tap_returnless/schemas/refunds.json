@@ -1,0 +1,36 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": ["string", "null"]
+        },
+        "external_id": {
+            "type": ["string", "null"]
+        },
+        "send_email": {
+            "type": ["boolean", "null"]
+        },
+        "online_refund": {
+            "type": ["boolean", "null"]
+        },
+        "refund_shipping": {
+            "type": ["boolean", "null"]
+        },
+        "amount_adjustment": {
+            "type": ["string", "null"]
+        },
+        "back_in_stock": {
+            "type": ["integer", "null"]
+        },
+        "refunded_discount_amount": {
+            "type": ["integer", "null"]
+        },
+        "refunded_transaction_cost": {
+            "type": ["boolean", "null"]
+        },
+        "return_order": {
+            "type": ["object", "null"]
+        }
+    }
+}

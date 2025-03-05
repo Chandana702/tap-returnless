@@ -1,0 +1,74 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": ["string", "null"]
+        },
+        "return_order_id": {
+            "type": ["string", "null"]
+        },
+        "shipping_method_id": {
+            "type": ["string", "null"]
+        },
+        "tracking_number": {
+            "type": ["string", "null"]
+        },
+        "tracking_url": {
+            "type": ["string", "null"]
+        },
+        "shipping_method": {
+            "type": ["string", "null"]
+        },
+        "carrier_name": {
+            "type": ["string", "null"]
+        },
+        "status": {
+            "type": ["object", "null"]
+        },
+        "is_billable": {
+            "type": ["boolean", "null"]
+        },
+        "barcode_option": {
+            "type": ["string", "null"]
+        },
+        "cost_price": {
+            "type": ["string", "null"]
+        },
+        "cost_price_details": {
+            "type": ["object", "null"]
+        },
+        "shipping_price": {
+            "type": ["string", "null"]
+        },
+        "shipping_price_details": {
+            "type": ["object", "null"]
+        },
+        "shipping_price_vat": {
+            "type": ["string", "null"]
+        },
+        "shipping_price_vat_details": {
+            "type": ["object", "null"]
+        },
+        "updated_at": {
+            "type": ["string", "null"]
+        },
+        "created_at": {
+            "type": ["string", "null"]
+        },
+        "shipment_lines": {
+            "type": ["array", "null"]
+        },
+        "includes": {
+            "properties": {
+                "customer_address": {
+                    "type": ["object", "null"]
+                },
+                "return_address": {
+                    "type": ["object", "null"]
+                }
+            },
+            "type": ["object", "null"]
+        }
+    }
+}

@@ -1,0 +1,33 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": ["string", "null"]
+        },
+        "return_order_id": {
+            "type": ["string", "null"]
+        },
+        "amount": {
+            "type": ["integer", "null"]
+        },
+        "code": {
+            "type": ["string", "null"]
+        },
+        "type": {
+            "type": ["string", "null"]
+        },
+        "apply_to_shipping": {
+            "type": ["boolean", "null"]
+        },
+        "free_shipping": {
+            "type": ["boolean", "null"]
+        },
+        "expires_at": {
+            "type": ["string", "null"]
+        },
+        "created_at": {
+            "type": ["string", "null"]
+        }
+    }
+}

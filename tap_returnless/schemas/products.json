@@ -1,0 +1,44 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": ["string", "null"]
+        },
+        "external_id": {
+            "type": ["string", "null"]
+        },
+        "name": {
+            "type": ["string", "null"]
+        },
+        "image_src": {
+            "type": ["string", "null"]
+        },
+        "url": {
+            "type": ["string", "null"]
+        },
+        "sku": {
+            "type": ["string", "null"]
+        },
+        "barcode": {
+            "type": ["string", "null"]
+        },
+        "hs_code": {
+            "type": ["string", "null"]
+        },
+        "dimensions": {
+            "properties": {
+                "width": {
+                    "type": ["integer", "null"]
+                },
+                "height": {
+                    "type": ["integer", "null"]
+                },
+                "length": {
+                    "type": ["integer", "null"]
+                }
+            },
+            "type": ["object", "null"]
+        }
+    }
+}
