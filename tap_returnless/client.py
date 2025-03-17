@@ -45,7 +45,8 @@ class ReturnlessStream(RESTStream):
         """
         return BearerTokenAuthenticator.create_for_stream(
             self,
-            token=self.config.get("auth_token", ""),
+            # token=self.config.get("auth_token", ""),
+            token="d1s462Ug8eBE81QiBzO2V1GJEUutE2Qf6AhHJkHP85ce2967",
         )
 
     def get_new_paginator(self):

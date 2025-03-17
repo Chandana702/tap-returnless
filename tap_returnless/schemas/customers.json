@@ -12,35 +12,38 @@
             "type": ["string", "null"]
         },
         "includes": {
-            "type": ["array", "null"],
+            "type": ["object", "null"],
             "properties": {
                 "addresses": {
-                    "id": {
-                        "type": ["string", "null"]
-                    },
-                    "city": {
-                        "type": ["string", "null"]
-                    },
-                    "coordinates": {
-                        "type": ["object", "null"]
-                    },
-                    "country": {
-                        "type": ["object", "null"]
-                    },
-                    "house_number": {
-                        "type": ["string", "null"]
-                    },
-                    "suffix": {
-                        "type": ["string", "null"]
-                    },
-                    "postal_code": {
-                        "type": ["string", "null"]
-                    },
-                    "street": {
-                        "type": ["string", "null"]
-                    },
-                    "telephone": {
-                        "type": ["string", "null"]
+                    "type": ["array", "null"],
+                    "properties": {
+                        "id": {
+                            "type": ["string", "null"]
+                        },
+                        "city": {
+                            "type": ["string", "null"]
+                        },
+                        "coordinates": {
+                            "type": ["object", "null"]
+                        },
+                        "country": {
+                            "type": ["object", "null"]
+                        },
+                        "house_number": {
+                            "type": ["string", "null"]
+                        },
+                        "suffix": {
+                            "type": ["string", "null"]
+                        },
+                        "postal_code": {
+                            "type": ["string", "null"]
+                        },
+                        "street": {
+                            "type": ["string", "null"]
+                        },
+                        "telephone": {
+                            "type": ["string", "null"]
+                        }
                     }
                 }
             }
