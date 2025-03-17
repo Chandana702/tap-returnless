@@ -12,8 +12,6 @@ from tap_returnless.client import ReturnlessStream
 
 # TODO: Delete this is if not using json files for schema definition
 SCHEMAS_DIR = resources.files(__package__) / "schemas"
-# TODO: - Override `UsersStream` and `GroupsStream` with your own stream definition.
-#       - Copy-paste as many times as needed to create multiple stream types.
 
 
 class Attachments(ReturnlessStream):
@@ -167,6 +165,12 @@ class RequestOrders(ReturnlessStream):
     replication_key = "updated_at"
     schema_filepath = SCHEMAS_DIR / "request_orders.json"
 
+    def get_child_context(self, record, context):
+        """Pass form_id to child streams."""
+        includes = record.get("includes", {}) or {}
+        customer = includes.get("customer", {}) or {}
+        return {"customer_id": customer["id"]}
+
     def get_url_params(self, context, next_page_token):
 
         params: dict = {
@@ -183,6 +187,23 @@ class RequestOrders(ReturnlessStream):
             params.update(parse_qsl(parsed_url.query))
 
         return params
+
+
+class Customer(ReturnlessStream):
+    """Customer stream class."""
+
+    name = "customers"
+    path = "/customers/{customer_id}"
+    records_jsonpath = "$.data"
+    primary_keys = ["id"]
+    replication_key = "id"
+    schema_filepath = SCHEMAS_DIR / "customers.json"
+
+    parent_stream_type = RequestOrders
+    ignore_parent_replication_key = True
+
+    def get_child_context(self, record, context):
+        return super().get_child_context(record, context)
 
 
 class ReturnOrders(ReturnlessStream):
