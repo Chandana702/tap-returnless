@@ -20,6 +20,7 @@ STREAM_TYPES = [
     RequestStatuses,
     ReturnStatuses,
     RequestOrders,
+    Customer,
     ReturnOrders,
     ReturnAddresses,
     SalesOrders,
